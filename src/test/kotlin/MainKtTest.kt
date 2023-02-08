@@ -2,6 +2,7 @@
 import HuvudprogramVGDEL2.Run
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.assertThrows
 
 internal class MainKtTest {
 
@@ -9,7 +10,7 @@ internal class MainKtTest {
     fun recursiveSanta() {
         val res = Run();
         val tomtensArbetare = res.getAllReportingSantas(res.tomten);
-        assertEquals(14,tomtensArbetare.size)
+        assertEquals(14, tomtensArbetare.size)
         assertEquals("Blyger", tomtensArbetare[4].name)
         assertEquals("Bladlusen", tomtensArbetare[13].name)
         println(tomtensArbetare)
@@ -19,5 +20,11 @@ internal class MainKtTest {
         assertEquals("Rådjuret", buttersArbetare[0].name)
         assertEquals("Bladlusen", buttersArbetare[6].name)
         println(buttersArbetare)
+
+        val bladlusensArbetare = res.getAllReportingSantas(res.bladlusen)
+        assertEquals(0, bladlusensArbetare.size)
+        assertThrows<IndexOutOfBoundsException> {
+            (bladlusensArbetare[0].name)
+        }
     }
 }
