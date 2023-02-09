@@ -8,6 +8,7 @@ internal class VGDEL2 {
 
     @Test
     fun testingIfRecursiveFunctionIsSummingCorrectly() {
+        println("\nTOMTEN:")
         val res = Run()
         val tomtensArbetare = res.getAllReportingSantas(res.tomten)
         assertEquals(14, tomtensArbetare.size)
@@ -16,6 +17,7 @@ internal class VGDEL2 {
         println(tomtensArbetare)
         println(tomtensArbetare.size)
 
+        println("\nBUTTER:")
         val buttersArbetare = res.getAllReportingSantas(res.butter)
         assertEquals(7, buttersArbetare.size)
         assertTrue(buttersArbetare.contains(res.radjuret))
@@ -23,6 +25,7 @@ internal class VGDEL2 {
         println(buttersArbetare)
         println(buttersArbetare.size)
 
+        println("\nBLADLUSEN:")
         val bladlusensArbetare = res.getAllReportingSantas(res.bladlusen)
         assertEquals(0, bladlusensArbetare.size)
         assertTrue(bladlusensArbetare.isEmpty())
