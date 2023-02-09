@@ -1,6 +1,6 @@
 package HuvudprogramVGDEL2
 
-import Entities.Tomte
+import HuvudprogramVGDEL2.Entities.Tomte
 
 class Run {
 

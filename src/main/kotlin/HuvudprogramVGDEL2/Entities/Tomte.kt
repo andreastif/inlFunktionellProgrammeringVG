@@ -1,4 +1,4 @@
-package Entities
+package HuvudprogramVGDEL2.Entities
 
 class Tomte(val name: String) {
     val workers = mutableListOf<Tomte>()
