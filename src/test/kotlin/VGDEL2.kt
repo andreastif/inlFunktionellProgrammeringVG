@@ -3,7 +3,7 @@ import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.assertThrows
 
-internal class VGDEL2 {
+open class VGDEL2 {
 
 
     @Test
