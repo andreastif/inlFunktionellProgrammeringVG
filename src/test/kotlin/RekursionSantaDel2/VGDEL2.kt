@@ -1,3 +1,5 @@
+package RekursionSantaDel2
+
 import HuvudprogramVGDEL2.Run
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
